@@ -17,6 +17,8 @@ COPY . /app/backend
 
 #for checking GITScm polling web hook working or not
 
+#added webhook in jenkins, we willsee auto triggering of build in jenkins
+
 EXPOSE 8000
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
 #RUN python manage.py migrate
